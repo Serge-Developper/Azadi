@@ -1,6 +1,9 @@
 html,body{margin:0;padding:0;height:100%;background:#111;color:#eee;font-family:system-ui,-apple-system,Segoe UI,Roboto}
-#menu{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+#menu{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;overflow:hidden}
+#menu::before{content:"";position:absolute;inset:0;background:url("img/home_screen.webp") center/cover no-repeat;filter:blur(4px);transform:scale(1.05)}
+#menu>*{position:relative;z-index:1}
 #logo{font-size:40px;font-weight:700;letter-spacing:1px}
+#logo img{height:180px;width:auto}
 .row{display:flex;flex-direction:column;gap:6px;width:280px}
 input,select,button{padding:10px 12px;border-radius:8px;border:1px solid #444;background:#1a1a1a;color:#eee}
 button{cursor:pointer;background:#2a62ff;border:0}
