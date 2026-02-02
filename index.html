@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Azadi Agar</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu">
+    <div id="logo">Azadi Agar</div>
+    <div class="row">
+      <label>Pseudo</label>
+      <input id="nick" type="text" placeholder="Votre pseudo" maxlength="16">
+    </div>
+    <div class="row">
+      <label>Skin (image)</label>
+      <input id="skin" type="file" accept="image/*">
+    </div>
+    <div class="row">
+      <label>Difficulté ennemis</label>
+      <select id="difficulty">
+        <option value="normal">Normal</option>
+        <option value="hard">Difficile</option>
+      </select>
+    </div>
+    <button id="play">Jouer</button>
+  </div>
+
+  <canvas id="game" width="1280" height="720"></canvas>
+
+  <div id="hud">
+    <div id="mass">Masse: 0</div>
+    <div id="score">Score: 0</div>
+    <div id="leaderboard"></div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
