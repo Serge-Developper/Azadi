@@ -1,5 +1,6 @@
+@font-face{font-family:"ValesonConExB";src:url("fonts/Valeson-ConExB.otf") format("opentype");font-weight:normal;font-style:normal;font-display:swap}
 html,body{margin:0;padding:0;height:100%;background:#111;color:#eee;font-family:system-ui,-apple-system,Segoe UI,Roboto}
-#menu{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;overflow:hidden}
+#menu{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;overflow:hidden;font-family:'ValesonConExB',system-ui,-apple-system,Segoe UI,Roboto}
 #menu::before{content:"";position:absolute;inset:0;background:url("img/home_screen.webp") center/cover no-repeat;filter:blur(4px);transform:scale(1.05)}
 #menu>*{position:relative;z-index:1}
 #logo{font-size:40px;font-weight:700;letter-spacing:1px}
@@ -9,7 +10,7 @@ input,select,button{padding:10px 12px;border-radius:8px;border:1px solid #444;ba
 button{cursor:pointer;background:#2a62ff;border:0}
 button:hover{filter:brightness(1.1)}
 #game{position:absolute;inset:0;width:100%;height:100%;display:none}
-#hud{position:fixed;left:16px;top:16px;display:flex;flex-direction:column;gap:6px;pointer-events:none}
+#hud{position:fixed;left:16px;top:16px;display:none;flex-direction:column;gap:6px;pointer-events:none}
 #leaderboard{position:fixed;right:16px;top:16px;text-align:right}
 body.theme-dark{background:#111;color:#eee}
 body.theme-light{background:#fafafa;color:#222}
